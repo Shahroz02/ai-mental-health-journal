@@ -1,0 +1,23 @@
+/**
+ * Shared types for chat generation. The mock implementation and a future
+ * real LLM adapter should both produce {@link ChatGenerationResult}.
+ */
+export type EmotionContextForChat = {
+  emotion: string | null;
+  confidence: number | null;
+  emotionMessage: string | null;
+  /** ISO date of the journal entry this context came from, if known */
+  journalEntryCreatedAt?: string | null;
+};
+
+export type ChatGenerationInput = {
+  userMessage: string;
+  /** Merged client + server journal context used to personalize tone */
+  emotionContext: EmotionContextForChat;
+};
+
+export type ChatGenerationResult = {
+  reply: string;
+  /** Short note about which context influenced the reply (mock or model metadata) */
+  emotionContext?: string;
+};

@@ -147,6 +147,12 @@ export default function JournalPage() {
               Dashboard
             </Link>
             <Link
+              href="/chat"
+              className="text-[#1e2a1c]/80 hover:text-[#1e2a1c]"
+            >
+              Chat
+            </Link>
+            <Link
               href="/profile"
               className="text-[#1e2a1c]/80 hover:text-[#1e2a1c]"
             >

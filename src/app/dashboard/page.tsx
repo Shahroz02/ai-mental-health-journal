@@ -71,6 +71,12 @@ export default function DashboardPage() {
           </Link>
           <div className="flex items-center gap-4 text-sm">
             <Link
+              href="/chat"
+              className="text-[#1e2a1c]/80 hover:text-[#1e2a1c]"
+            >
+              Chat
+            </Link>
+            <Link
               href="/journal"
               className="text-[#1e2a1c]/80 hover:text-[#1e2a1c]"
             >

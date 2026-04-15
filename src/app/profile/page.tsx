@@ -150,6 +150,12 @@ export default function ProfilePage() {
             >
               Dashboard
             </Link>
+            <Link
+              href="/chat"
+              className="text-[#1e2a1c]/80 hover:text-[#1e2a1c]"
+            >
+              Chat
+            </Link>
             <Link href="/" className="text-[#1e2a1c]/80 hover:text-[#1e2a1c]">
               Home
             </Link>
